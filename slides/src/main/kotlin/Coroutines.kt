@@ -1,16 +1,34 @@
+import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
+import kotlin.system.measureTimeMillis
 
-suspend fun fetch(): String {
+suspend fun fetchUser(): String {
     delay(1000)
-    return "ok"
+    return "User"
 }
 
-fun main() {
-    runBlocking {
-         launch {
-             println(fetch())
-         }
+suspend fun fetchOrders(): String {
+    delay(1000)
+    return "Orders"
+}
+
+suspend fun fetchRecommendations(): String {
+    delay(1000)
+    return "Recommendations"
+}
+
+fun main() = runBlocking {
+
+    val time = measureTimeMillis {
+        val user = async { fetchUser() }
+        val orders = async { fetchOrders() }
+        val recommendations = async { fetchRecommendations() }
+
+        println(user.await())
+        println(orders.await())
+        println(recommendations.await())
     }
+
+    println("Time: $time ms")
 }
