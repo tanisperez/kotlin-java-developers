@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: Demo Coruña JUG
+    version: @project.version@
