@@ -6,6 +6,7 @@ import java.time.OffsetDateTime
 @Entity
 @Table(name = "project")
 data class ProjectEntity(
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)

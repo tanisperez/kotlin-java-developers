@@ -65,6 +65,7 @@
                         <goals>
                             <goal>compile</goal>
                         </goals>
+                        <configuration/>
                     </execution>
                     <execution>
                         <id>test-compile</id>
@@ -80,6 +81,9 @@
                         <sourceDir>src/main/kotlin</sourceDir>
                         <sourceDir>src/main/java</sourceDir>
                     </sourceDirs>
+                    <compilerPlugins>
+                        <plugin>spring</plugin>
+                    </compilerPlugins>
                 </configuration>
                 <dependencies>
                     <dependency>
