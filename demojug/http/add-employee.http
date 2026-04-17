@@ -1,0 +1,100 @@
+### Add employee 1
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+    "name": "Juan García",
+    "salary": "2850.75",
+    "currency": "EUR"
+}
+
+### Add employee 2
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+    "name": "María López",
+    "salary": "3200.50",
+    "currency": "EUR"
+}
+
+### Add employee 3
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+    "name": "Carlos Martínez",
+    "salary": "2950.00",
+    "currency": "EUR"
+}
+
+### Add employee 4
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+    "name": "Ana Rodríguez",
+    "salary": "3500.25",
+    "currency": "EUR"
+}
+
+### Add employee 5
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+    "name": "Pedro Gómez",
+    "salary": "2700.80",
+    "currency": "EUR"
+}
+
+### Add employee 6
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+    "name": "Laura Fernández",
+    "salary": "4100.00",
+    "currency": "EUR"
+}
+
+### Add employee 7
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+    "name": "Roberto Díaz",
+    "salary": "3100.45",
+    "currency": "EUR"
+}
+
+### Add employee 8
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+    "name": "Isabela Núñez",
+    "salary": "2600.90",
+    "currency": "EUR"
+}
+
+### Add employee 9
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+    "name": "Fernando Moreno",
+    "salary": "3650.30",
+    "currency": "EUR"
+}
+
+### Add employee 10
+POST http://localhost:8080/api/employees
+Content-Type: application/json
+
+{
+    "name": "Gabriela Torres",
+    "salary": "2950.15",
+    "currency": "EUR"
+}
+
